@@ -1,0 +1,26 @@
+.Navbar1{
+    height: 50px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 0;
+}
+.NavbarLeft {
+    display: flex;
+    margin-left: 0;
+    flex-direction: row;
+    width: 50%;
+    justify-content: left;
+    background-color: yellow;
+}
+.NavbarRight {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    justify-content: right;    
+}
+.mr-auto :hover{
+    variant: 'primary'
+}

@@ -1,0 +1,17 @@
+.loginScreen{
+    background-color: tomato;
+    height: 94.2vh;
+    padding-top: 10vh;
+}
+.loginBox{
+    background-color: white;
+    height: 25vh;
+    width: 40vw;
+    justify-content: center;
+    margin-left: 30vw;
+    border-radius: 15px;
+}
+.loginBox h1{
+    color: red;
+    text-align: center;
+}
