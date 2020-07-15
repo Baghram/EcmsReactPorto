@@ -15,6 +15,7 @@ function Navigationbar() {
 
 	function loggedOut() {
 		dispatch({type: 'loggedOut'})
+		localStorage.removeItem('Access_Token')
 	}
 
 	if (login === true) {

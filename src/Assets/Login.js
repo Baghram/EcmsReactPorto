@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Form, Input, Button } from 'antd';
 import { Redirect } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import {toast} from 'react-toastify'
+import Axios from 'axios'
 import 'antd/dist/antd.css';
 import './Login.css';
 
@@ -17,8 +19,35 @@ function Login() {
 	};
 	const onFinish = (values) => {
 		console.log('Success:', values);
+		Axios({
+			url: 'http://localhost:3001/user/login',
+			method: 'POST',
+			data: {
+				Email: values.Email,
+				Password: values.Password
+			}
+		})
+		.then(result => {
+			toast.success('Login Success', {
+                position: 'bottom-left',
+                autoClose: 2500,
+                hideProgressBar: true,
+                closeOnClick: true
+			});
+			setLoggedIn(true);
+			localStorage.setItem('Access_Token', result.data.Access_Token)
+			
+		})
+		.catch(err => {
+			toast.error('Wrong Email / Password', {
+                position: 'bottom-left',
+                autoClose: 2500,
+                hideProgressBar: true,
+                closeOnClick: true
+			});
+		})
+		
 		dispatch({type: 'loggedIn'})
-		setLoggedIn(true);
 	};
 
 	const onFinishFailed = (errorInfo) => {
