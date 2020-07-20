@@ -9,6 +9,7 @@ import Details from './Assets/Details';
 import Order from './Assets/Order';
 import Cart from './Assets/Cart';
 import NavigationBar from './Assets/Navbar';
+import Product from './Assets/Product';
 import Darkmode from 'darkmode-js';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, Flip } from 'react-toastify';
@@ -18,11 +19,13 @@ function App() {
 		label: '🌙',
 	};
 	new Darkmode(option).showWidget();
+
+	
 	return (
 		<div className="App">
 			<Provider store={AppStore}>
 				<Router>
-          <ToastContainer transition={Flip}></ToastContainer>
+					<ToastContainer transition={Flip}></ToastContainer>
 					<NavigationBar></NavigationBar>
 					<Switch>
 						<Route path="/details/:id">
@@ -39,6 +42,9 @@ function App() {
 						</Route>
 						<Route path="/register">
 							<Register></Register>
+						</Route>
+						<Route path="/product">
+							<Product></Product>
 						</Route>
 						<Route path="/">
 							<Home></Home>

@@ -19,7 +19,7 @@ function Login() {
         // console.log(values.Email)
         // console.log(values.Password)
         Axios({
-            url: 'http://localhost:3001/user/register',
+            url: 'https://frozen-meadow-20864.herokuapp.com/user/register',
             method: 'POST',
             data: {
                 Email: values.Email,

@@ -55,7 +55,7 @@ function Navigationbar() {
 									Cart
 								</Button>
 							</Link>
-							<Link to="/order">
+							<Link to="/orderhistory">
 								<Button
 									variant={variantOrder}
 									onMouseEnter={(e) => setVariant('primary')}

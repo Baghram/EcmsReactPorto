@@ -20,7 +20,7 @@ function Login() {
 	const onFinish = (values) => {
 		console.log('Success:', values);
 		Axios({
-			url: 'http://localhost:3001/user/login',
+			url: 'https://frozen-meadow-20864.herokuapp.com/user/login',
 			method: 'POST',
 			data: {
 				Email: values.Email,
@@ -35,7 +35,7 @@ function Login() {
                 closeOnClick: true
 			});
 			setLoggedIn(true);
-			localStorage.setItem('Access_Token', result.data.Access_Token)
+			localStorage.setItem('Access_Token', result.data.access_token)
 			
 		})
 		.catch(err => {

@@ -16,14 +16,14 @@ function Store(state=initialState, action) {
         case 'loggedOut':
             state.isLogin = false
             return state
-        case 'addToCart':
-            state.Cart.push(action.payload)
+        case 'getCart':
+            state.Cart = action.payload
             return state
         case 'getOrder':
-            state.Order.push(action.payload)
+            state.Order = action.payload 
             return state
         case 'getProduct':
-            state.Products.push(action.payload)
+            state.Products = action.payload
             return state
         
         default:
