@@ -1,0 +1,18 @@
+.productTable {
+    width: 80vw;
+    height: 80vh;
+    background-color: orange;
+    margin-left: 10vw;
+    margin-left: 10vw;
+    padding-left: 3vw;
+    padding-top: 3vh;
+    padding-right: 3vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    align-content: space-evenly;
+
+}

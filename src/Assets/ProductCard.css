@@ -1,0 +1,4 @@
+.OrderForm {
+    display: flex;
+    flex-direction: row;
+}
