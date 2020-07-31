@@ -1,0 +1,16 @@
+.cartTable {
+    width: 50vw;
+    background-color: palegreen;
+    margin-left: 25vw;
+    margin-top: 2vh;
+    overflow: auto;
+    height: 60vh;
+    border-style: dashed;
+    border-radius: 1cm;
+}
+.titleCart {
+    font-size: 40;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 0vh;
+}

@@ -13,6 +13,7 @@ import Product from './Assets/Product';
 import Darkmode from 'darkmode-js';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, Flip } from 'react-toastify';
+import Update from './Assets/Update'
 
 function App() {
 	const option = {
@@ -30,6 +31,9 @@ function App() {
 					<Switch>
 						<Route path="/details/:id">
 							<Details></Details>
+						</Route>
+						<Route path="/cart/update/:id">
+							<Update></Update>
 						</Route>
 						<Route path="/cart">
 							<Cart></Cart>

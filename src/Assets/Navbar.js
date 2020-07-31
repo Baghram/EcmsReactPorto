@@ -40,7 +40,7 @@ function Navigationbar() {
 							<Link to="/product">
 								<Button
 									variant={variantProduct}
-									onMouseEnter={(e) => setVariant('primary')}
+									onMouseEnter={(e) => setVariantProduct('primary')}
 									onMouseLeave={(e) => setVariantProduct('light')}
 								>
 									Product
@@ -49,7 +49,7 @@ function Navigationbar() {
 							<Link to="/cart">
 								<Button
 									variant={variantCart}
-									onMouseEnter={(e) => setVariant('primary')}
+									onMouseEnter={(e) => setVariantCart('primary')}
 									onMouseLeave={(e) => setVariantCart('light')}
 								>
 									Cart
@@ -58,7 +58,7 @@ function Navigationbar() {
 							<Link to="/orderhistory">
 								<Button
 									variant={variantOrder}
-									onMouseEnter={(e) => setVariant('primary')}
+									onMouseEnter={(e) => setVariantOrder('primary')}
 									onMouseLeave={(e) => setVariantOrder('light')}
 								>
 									Order History
