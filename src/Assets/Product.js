@@ -24,7 +24,6 @@ function Product() {
 					type: 'getProduct',
 					payload: result.data,
 				});
-				console.log('AHAHAHAHAH');
 			})
 			.catch((err) => {
 				console.log(err);
